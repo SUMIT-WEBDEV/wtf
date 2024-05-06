@@ -83,13 +83,27 @@ const ViewMore = ({ selectedValue, setViewModal, setSelectedValue }: any) => {
                     <p className="text-lg">Duration: {selectedValue.duration}</p>
                     <p className="text-lg">Class Type: {selectedValue.classType}</p>
                     <p className="text-lg">Created At: {selectedValue.createdAt}</p>
-                    <button
-                        onClick={userData ? handleSignUp : undefined}
-                        disabled={alreadySignedUp || !userData}
-                        className={`mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${alreadySignedUp || !userData ? 'opacity-50 cursor-not-allowed' : ''}`}
-                    >
-                        {userData ? (alreadySignedUp ? 'Already Signed Up' : 'Sign Up for Class') : <Link to="/login" className='bg-blue-500'>Sign Up</Link>}
-                    </button>
+
+                    {
+                        userData ?
+                            <button
+                                onClick={userData ? handleSignUp : undefined}
+                                disabled={alreadySignedUp || !userData}
+                                className={`mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${alreadySignedUp || !userData ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            >
+                                {alreadySignedUp ? 'Already Signed Up' : 'Sign Up for Class'}
+                            </button>
+                            :
+                            <Link to="/login" className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-5'>
+                                <button className='m-5'>
+                                    Sign Up
+                                </button>
+
+                            </Link>
+
+                    }
+
+
                 </div>
             </div>
         </div>

@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Fitness Scheduler
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Fitness Scheduler is a web application built using React and Vite. It allows users to view and sign up for fitness classes, with features for filtering classes based on parameters like class type, time of day, and instructor. The application also includes an admin view for managing classes, such as adding new ones or modifying existing ones.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Display a weekly calendar with available fitness classes.
+- View detailed information about each class, including time, duration, and instructor.
+- Filter classes based on parameters like class type, time of day, and instructor.
+- Prevent users from signing up for overlapping classes.
+- Implement error handling for API interactions.
+- Admin view for adding or modifying classes.
+- Optional: User authentication (mock implementation).
+- Optional: Notifications for class sign-ups or changes.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+https://github.com/SUMIT-WEBDEV/wtf.git
+
+
+2. Navigate to the project directory:
+
+cd wtf
+
+
+3. Install dependencies:
+
+npm install
+
+
+4. Start the development server:
+
+npm run dev
+
+### admin credentials-
+
+- email: admin123@wtf.com
+- password: password123
+
+### mock api -
+- classes - https://6637a59e288fedf69380ea26.mockapi.io/api/v1/classes/classes
+- users - https://6637a59e288fedf69380ea26.mockapi.io/api/v1/classes/users
+

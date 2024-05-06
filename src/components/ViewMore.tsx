@@ -88,7 +88,7 @@ const ViewMore = ({ selectedValue, setViewModal, setSelectedValue }: any) => {
                         disabled={alreadySignedUp || !userData}
                         className={`mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${alreadySignedUp || !userData ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
-                        {userData ? (alreadySignedUp ? 'Already Signed Up' : 'Sign Up for Class') : <Link to="/login">Sign Up</Link>}
+                        {userData ? (alreadySignedUp ? 'Already Signed Up' : 'Sign Up for Class') : <Link to="/login" className='bg-blue-500'>Sign Up</Link>}
                     </button>
                 </div>
             </div>

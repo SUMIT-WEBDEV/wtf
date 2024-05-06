@@ -39,7 +39,7 @@ export default function SignUpForm() {
                 reset();
                 navigate("/")
             } else {
-                console.error('Authentication failed');
+                alert('Authentication failed');
             }
         } catch (error) {
             console.error('Error submitting form:', error);

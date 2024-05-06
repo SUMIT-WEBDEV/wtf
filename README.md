@@ -20,22 +20,22 @@ The Fitness Scheduler is a web application built using React and Vite. It allows
 
 1. Clone the repository:
    ```bash
-      https://github.com/SUMIT-WEBDEV/wtf.git
+   https://github.com/SUMIT-WEBDEV/wtf.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-      cd wtf
+   cd wtf
     ```
 
 3. Install dependencies:
    ```bash
-    npm install
+   npm install
     ```
 
 4. Start the development server:
    ```bash
-    npm run dev
+   npm run dev
     ```
   
 ### admin credentials-

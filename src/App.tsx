@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home';
 import Navbar from './components/Navbar';
 import SignIn from './components/SignIn';
-import AdminPanel from './components/Admin';
+import AdminLogin from "./components/AdminLogin";
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
             path="/admin" element={
               <>
                 <Navbar />
-                <AdminPanel />
+                <AdminLogin />
               </>
             }
           />

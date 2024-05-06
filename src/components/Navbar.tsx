@@ -20,6 +20,7 @@ const Navbar = () => {
                     userData &&
                     <a href="/" onClick={handleLogOut}>Log Out</a>
                 }
+                <Link to="/admin">Admin</Link>
             </div>
         </div>
     );

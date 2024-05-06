@@ -1,8 +1,6 @@
 import { useState } from "react";
 import {
     format,
-    subMonths,
-    addMonths,
     startOfWeek,
     addDays,
     isSameDay,
@@ -24,19 +22,10 @@ const Calendar = ({ showDetailsHandle, classesData }: any) => {
 
 
     const handleViewMoreInfo = (classItem: any) => {
-        // alert(JSON.stringify(classItem))
         setSelectedValue(classItem)
         setViewModal((prev) => !prev)
     }
 
-    // const changeMonthHandle = (btnType: any) => {
-    //     if (btnType === "prev") {
-    //         setCurrentMonth(subMonths(currentMonth, 1));
-    //     }
-    //     if (btnType === "next") {
-    //         setCurrentMonth(addMonths(currentMonth, 1));
-    //     }
-    // };
 
     const changeWeekHandle = (btnType: any) => {
         //console.log("current week", currentWeek);
@@ -59,19 +48,15 @@ const Calendar = ({ showDetailsHandle, classesData }: any) => {
 
     const renderHeader = () => {
         const dateFormat = "MMM yyyy";
-        // console.log("selected day", selectedDate);
         return (
             <div className="header row flex-middle">
                 <div className="col col-start">
-                    {/* <div className="icon" onClick={() => changeMonthHandle("prev")}>
-            prev month
-          </div> */}
+
                 </div>
                 <div className="col col-center">
                     <span>{format(currentMonth, dateFormat)}</span>
                 </div>
                 <div className="col col-end">
-                    {/* <div className="icon" onClick={() => changeMonthHandle("next")}>next month</div> */}
                 </div>
             </div>
         );

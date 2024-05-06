@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-// import useAuth from '../hooks/useAuth';
-// import { useAuth } from '../hooks/useAuth';
-// import useAuth from '../hooks/useAuth';
+
 
 const Navbar = () => {
     const { userData, logout } = useAuth();
@@ -10,7 +8,6 @@ const Navbar = () => {
     console.log("userData", userData)
 
     const handleLogOut = () => {
-        // localStorage.removeItem('userData');
         logout()
     };
 
